@@ -28,13 +28,32 @@ class App extends Component {
     });
   }
 
+  DeleteSong = async(id) => {
+    
+    await axios.delete('http://127.0.0.1:8000/music/'+id+'/')
+    
+  }
+
+
+  // filterSOngs = (searchTerm) => {
+  //   let filteredSongs = this.state.songs.filter(function(song){
+  //     if(song.title.includes(searchTerm)){
+  //       return true
+  //     } 
+  //     else {
+  //       return false;
+  //       }
+  //     })
+  //   }
+  
+
 
 
   render() {
     return (
       <div>
       <Header />    
-      <DisplayAllMusic songs={this.state.songs} />
+      <DisplayAllMusic songs={this.state.songs} deleteSong= {this.DeleteSong} />
       <CreateSong  getAllSongs={this.getAllSongs} />
       </div>
     )

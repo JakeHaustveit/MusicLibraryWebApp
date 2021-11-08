@@ -1,4 +1,5 @@
 import React from "react";
+
 import "./DisplayAllSongs.css"
 
 const DisplayAllMusic = (props) => {
@@ -6,15 +7,16 @@ const DisplayAllMusic = (props) => {
         props.songs.map(function(song){
             return(
             <table className= "table">
-                <tr>
-                <th className="th"> {song.id} </th>
+                <div key={song.id}>
+                <tr>                
                 <th className="th"> {song.title} </th>
                 <th className="th"> {song.artist} </th>
                 <th className="th"> {song.album} </th>
                 <th className="th"> {song.release_date} </th>
                 <th className="th"> {song.likes}  </th>
-                <th> <button>Delete Song</button> </th>
+                <th> <button onSubmit={props.deleteSong([song.id])} >Delete Song </button> </th>
                 </tr>
+                </div>
             </table>
             )
         })
