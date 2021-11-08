@@ -22,10 +22,11 @@ class CreateSong extends Component{
         })
     }
 
-    handleSubmit = (event) => {
-        event.preventDefault();  
+    handleSubmit = async(event) => {
+        event.preventDefault();        
+        
         let newSong = this.state
-        console.log(newSong)
+        await axios.post("http://127.0.0.1:8000/music/", newSong)
         
         
         
@@ -33,7 +34,7 @@ class CreateSong extends Component{
 
     render() {
         return(            
-            <form onSubmit={() => this.handleSubmit()} method="post">
+            <form  onSubmit={() => this.handleSubmit()}  method="post">
                 
                 <label>Title:</label>
                 <div className=''>

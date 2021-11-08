@@ -2,6 +2,7 @@ import axios from "axios";
 import React, {Component} from "react";
 import DisplayAllMusic from "./components/DisplayAllSongs/DisplayAllSongs";
 import CreateSong from "./components/CreateSong/CreateSong";
+import Header from "./components/Header/Header";
 
 
 
@@ -32,7 +33,7 @@ class App extends Component {
   render() {
     return (
       <div>
-      <h1>Hello World</h1>      
+      <Header />    
       <DisplayAllMusic songs={this.state.songs} />
       <CreateSong />
       </div>

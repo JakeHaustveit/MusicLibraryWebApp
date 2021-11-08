@@ -12,7 +12,8 @@ const DisplayAllMusic = (props) => {
                 <th className="th"> {song.artist} </th>
                 <th className="th"> {song.album} </th>
                 <th className="th"> {song.release_date} </th>
-                <th className="th"> {song.likes} </th>
+                <th className="th"> {song.likes}  </th>
+                <th> <button>Delete Song</button> </th>
                 </tr>
             </table>
             )
