@@ -35,7 +35,7 @@ class App extends Component {
       <div>
       <Header />    
       <DisplayAllMusic songs={this.state.songs} />
-      <CreateSong />
+      <CreateSong  getAllSongs={this.getAllSongs} />
       </div>
     )
   }

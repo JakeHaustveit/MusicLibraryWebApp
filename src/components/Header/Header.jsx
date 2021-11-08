@@ -1,9 +1,10 @@
 import React from "react";
+import './Header.css'
 
 
 const Header = (props) => {
     return(
-        <h1>Helllo</h1>
+        <h1 className='header'>My Music App</h1>
     )
        
 }
