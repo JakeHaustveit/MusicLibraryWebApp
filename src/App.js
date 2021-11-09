@@ -3,6 +3,7 @@ import React, {Component} from "react";
 import DisplayAllMusic from "./components/DisplayAllSongs/DisplayAllSongs";
 import CreateSong from "./components/CreateSong/CreateSong";
 import Header from "./components/Header/Header";
+import SearchBar from "./components/SearchBar/SearchBar";
 
 
 
@@ -51,8 +52,9 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-      <Header />    
+      <div >
+      <Header />
+      <SearchBar />    
       <DisplayAllMusic songs={this.state.songs} deleteSong= {this.DeleteSong} />
       <CreateSong  getAllSongs={this.getAllSongs} />
       </div>

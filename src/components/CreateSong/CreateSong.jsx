@@ -41,18 +41,17 @@ class CreateSong extends Component{
     render() {
         return(            
             <form  onSubmit={(event) => this.handleSubmit(event)}  method="post">
-                
-                <label>Title:</label>
                 <div className=''>
-                    <input  type="text" name="title" onChange={this.handleChange} value={this.state.title} />
-                    <label>Artist Name:</label>
-                    <input type="text" name="artist" onChange={this.handleChange} value={this.state.artist} />
-                    <label>Album Name:</label>
-                    <input type="text" name="album" onChange={this.handleChange} value={this.state.album} />
-                    <label>Release Date:</label>
-                    <input type="date" name="release_date" onChange={this.handleChange} value={this.state.release_date} />
-                    <label>Likes:</label>
-                    <input type="text" name="likes" onChange={this.handleChange} value={this.state.likes} />
+                    <label>Title:</label> <br />               
+                    <input  type="text" name="title" onChange={this.handleChange} value={this.state.title} /><br />
+                    <label>Artist Name:</label> <br />
+                    <input type="text" name="artist" onChange={this.handleChange} value={this.state.artist} /><br />
+                    <label>Album Name:</label><br />
+                    <input type="text" name="album" onChange={this.handleChange} value={this.state.album} /><br />
+                    <label>Release Date:</label><br />
+                    <input type="date" name="release_date" onChange={this.handleChange} value={this.state.release_date} /><br />
+                    <label>Likes:</label><br />
+                    <input type="text" name="likes" onChange={this.handleChange} value={this.state.likes} /><br />
                     <button type="submit">Add Song</button>
                 </div>
                           

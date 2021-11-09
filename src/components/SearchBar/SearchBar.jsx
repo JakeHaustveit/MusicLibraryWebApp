@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import "./SearchBar.css"
 
 class SearchBar  extends Component {
     constructor(props) {
@@ -6,7 +7,18 @@ class SearchBar  extends Component {
         this.state = {  }
     }
     render() { 
-        return ( a );
+        return ( 
+            <ul>
+                <li><a>Home</a></li>
+                <li><a >Search by Artist</a></li>
+                <li><a >Search by Album</a></li>
+                <li><a >Search by Release Date</a></li>
+                <li><a >Search by Release Date</a></li>
+            </ul>
+
+
+
+        );
     }
 }
  

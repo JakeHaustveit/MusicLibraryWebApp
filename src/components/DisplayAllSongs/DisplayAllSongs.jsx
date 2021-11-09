@@ -14,7 +14,7 @@ const DisplayAllMusic = (props) => {
                 <th className="th"> {song.album} </th>
                 <th className="th"> {song.release_date} </th>
                 <th className="th"> {song.likes}  </th>
-                <th> <button onSubmit={props.deleteSong([song.id])} >Delete Song </button> </th>
+                <th> <button onClick={() => props.deleteSong(song.id)} >Delete Song</button> </th>
                 </tr>
                 </div>
             </table>
