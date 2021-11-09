@@ -52,11 +52,13 @@ class App extends Component {
 
   render() {
     return (
-      <div >
+      <div>
       <Header />
-      <SearchBar />    
+      <SearchBar />   
+      <body >    
       <DisplayAllMusic songs={this.state.songs} deleteSong= {this.DeleteSong} />
       <CreateSong  getAllSongs={this.getAllSongs} />
+      </body>
       </div>
     )
   }

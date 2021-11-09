@@ -1,11 +1,11 @@
-.table {
+table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 40%;
     background-color: bisque
   }
   
-.th {
+th {
     border: 1px solid #d89140;
     text-align: left;
     padding: 8px;
