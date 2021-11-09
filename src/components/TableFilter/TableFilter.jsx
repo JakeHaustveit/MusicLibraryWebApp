@@ -4,7 +4,7 @@ import "./TableFilter.css"
 
 const TableFilter = (props) => {
     return ( 
-        props.songs.map(function(song){
+        props.songs.filter(function(song){
             return(
             <table className= "table">
                 <div key={song.id}>

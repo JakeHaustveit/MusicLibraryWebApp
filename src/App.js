@@ -31,7 +31,8 @@ class App extends Component {
 
   DeleteSong = async(id) => {
     
-    await axios.delete('http://127.0.0.1:8000/music/'+id+'/')
+    let response= await axios.delete('http://127.0.0.1:8000/music/'+id+'/')
+    
     
   }
 

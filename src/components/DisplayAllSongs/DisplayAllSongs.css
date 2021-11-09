@@ -1,14 +1,15 @@
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 40%;
-    background-color: bisque
+    width: 100%;
+    background-color: rgba(190, 89, 42, 0)
   }
   
 th {
-    border: 1px solid #d89140;
+    border: 1px solid hsl(0, 1%, 32%);
     text-align: left;
     padding: 8px;
-    background-color: bisque;
-    width: 15%;
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    
   }
